@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            body {
+                background-color: #EEEEFF;
+                font-family: tahoma;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flash" style="padding-bottom: 20px; color: blue;">Score: <span id="score"></span></div>
+        <div>
+            <span style="font-weight: bold;"> Clue </span>
+            <div id="question" style="border: 1px dashed; background-color: white; border-color: grey; width: 20%; margin: 10px; padding: 10px;"></div>
+        </div>
+
+        <div id="hint">
+            <span style="font-weight: bold;"> Hint </span>
+            <div id="hintResponse" style="border: 1px dashed; background-color: white; border-color: grey; width: 20%; margin: 10px; padding: 10px;"></div>
+        </div>
+
+        <input id="response" type="text" size="50"></input>
+        <button type="button" id="submit">Submit Answer</button>
+        <span id='feedback'></span>
+
+        <div id='pass' style="padding-top: 20px;">
+            <span id="passResponse"></span>
+            <button type="button" id="hintButton">Give me a hint!</button>
+            <button type="button" id="passButton">I give up!</button>
+            <button type="button" id="nextQuestionButton">Next Question</button>
+        </div>
+    </body>
+</html>
